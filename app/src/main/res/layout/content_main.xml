@@ -66,17 +66,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
-                    android:text="TextView" />
+                    android:gravity="center"
+                    android:text="Product Name" />
 
 
-                <EditText
-                    android:id="@+id/editText"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                  android:layout_gravity="bottom"
-
-                    android:inputType="text"
-                    android:text="Name" />
+                
 
             </com.google.android.material.card.MaterialCardView>
 
