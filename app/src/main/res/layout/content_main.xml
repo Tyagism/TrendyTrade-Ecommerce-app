@@ -17,47 +17,76 @@
         app:navGraph="@navigation/mobile_navigation" />
 
 
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
-    <LinearLayout
-        android:id="@+id/ll1"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-
-        <com.google.android.material.card.MaterialCardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center">
-
-            <ViewAnimator
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:foreground="@drawable/ic_menu_camera">
-
-            </ViewAnimator>
-
-        </com.google.android.material.card.MaterialCardView>
-
-
-        <Space
+        <LinearLayout
+            android:id="@+id/ll1"
             android:layout_width="wrap_content"
-            android:layout_height="20dp"/>
+            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <com.google.android.material.card.MaterialCardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                app:rippleColor="@color/cardview_light_background"
+                    android:layout_gravity="center">
+
+
+                <ViewAnimator
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:foreground="@drawable/ic_menu_camera">
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginTop="50dp"
+                        android:gravity="center"
+                        android:text="Product Name here"
+                        tools:ignore="HardcodedText" />
+                </ViewAnimator>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="150dp"
+            android:layout_height="match_parent"
             android:orientation="horizontal">
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content" />
 
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="100dp"
-                android:layout_height="wrap_content"
+                app:rippleColor="#F86969"
+                android:layout_height="127dp"
                 android:layout_gravity="center">
 
 
                 <ImageView
                     android:id="@+id/imageView2"
                     android:layout_width="wrap_content"
+                    android:layout_marginTop="-14dp"
                     android:layout_height="wrap_content"
                     tools:srcCompat="@tools:sample/avatars" />
 
@@ -65,18 +94,17 @@
                     android:id="@+id/textView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/material_dynamic_primary0"
                     android:layout_gravity="bottom"
                     android:gravity="center"
                     android:text="Product Name" />
-
-
 
 
             </com.google.android.material.card.MaterialCardView>
 
             <Space
                 android:layout_width="20dp"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content" />
 
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="100dp"
@@ -101,7 +129,7 @@
 
             <Space
                 android:layout_width="20dp"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content" />
 
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="100dp"
@@ -113,7 +141,7 @@
 
             <Space
                 android:layout_width="20dp"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content" />
 
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="100dp"
@@ -125,7 +153,7 @@
 
             <Space
                 android:layout_width="20dp"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content" />
 
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="100dp"
@@ -135,18 +163,15 @@
 
             </com.google.android.material.card.MaterialCardView>
 
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="20dp">
 
+            </Space>
 
 
         </LinearLayout>
-
-        <Space
-            android:layout_width="wrap_content"
-            android:layout_height="20dp">
-
-        </Space>
-
-    </LinearLayout>
+    </HorizontalScrollView>
 
     <LinearLayout
         android:id="@+id/layoutvertical2"
